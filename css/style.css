@@ -4,6 +4,6 @@ body {
     font-family: 'Baloo Chettan 2', cursive !important;
 }
 
-#lst__form {
-    
+.alert {
+    display: none !important;
 }
