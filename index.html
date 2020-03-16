@@ -20,40 +20,88 @@
       <div class="card d-flex justify-content-center rounded shadow-sm align-items-center m-5">
         <h5>To participate in the conference, please fill out the form</h5>
       </div>
-      <div class="row m-5">
+      <div class="row m-5 align-items-center justify-content-center">
 
-        <form>
 
-          <div class="form-group">
-            <label for="exampleInputEmail1">First Name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <!-- First Form -->
+        <form id="first__form"> 
+          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">First Name</label>
+              <input type="text" class="form-control" placeholder="Your name...">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Last Name </label>
+              <input type="text" class="form-control" placeholder="Last name...">
+            </div>
           </div>
 
           <div class="form-group">
-            <label for="">LastName</label>
-            <input type="text" class="form-control" placeholder="LastName">
+            <label for="example-date-input" class=" ">Your Date</label>  
+              <input class="form-control" type="date" id="example-date-input">       
           </div>
 
           <div class="form-group">
-            <label>LastName</label>
-            <input type="text" class="form-control" id="exampleInputEmail" placeholder="LastName">
+            <label for="example-tel-input">Telephone</label>
+            
+              <input class="form-control" placeholder="Phone nubmer" type="tel" id="example-tel-input">
+            
           </div>
 
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="inputEmail">Email</label>
+            <input type="Email" class="form-control" placeholder="Your email">
           </div>
 
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
+         <div class="form-group">
+           <label for="inputReport">Report your subject</label>
+           <input type="text" class="form-control" placeholder="Report your subject..." style="width: 100%;">
+         </div>
 
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-success" style="float: right; width: 150px;">Next</button>
         </form>
-
+        
       </div>
+      <!--End first form-->
+
+      <!--  Form #2  -->
+
+      <div class="row m-5 align-items-center justify-content-center">
+
+        
+         <form id="lst__form">
+          <div class="form-row">
+
+            <div class="form-group col-md-6">
+              <label for="inputCompany">Company</label>
+              <input type="text" class="form-control" placeholder=" Your company...">
+            </div>
+  
+            <div class="form-group col-md-6">
+              <label for="inputPosition">Position</label>
+              <input type="text" class="form-control" placeholder="Your position...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputAbout">About me</label>
+            <textarea id="" placeholder="About me..." style="width: 100%; resize: none;"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="InputFile">Your photo</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            
+          </div>
+
+          <button type="submit" class="btn btn-success" style="float: right; width: 150px;">Next</button>
+
+        </form>
+        
+      </div>
+      <!--End form #2-->
     </div>
 
 
